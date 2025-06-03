@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #f5f1e8 0%, #ede7d3 100%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.page-frame {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  display: flex;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.info-panel {
+  flex: 1;
+  padding: 50px;
+  background: linear-gradient(135deg, #faf9f5 0%, #f2efe6 100%);
+  overflow-y: auto;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #7a9b57;
+  margin-bottom: 12px;
+}
+
+.recipe-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.ingredients {
+  margin-bottom: 30px;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.quantity {
+  color: #7a9b57;
+  font-weight: 600;
+  margin-right: 10px;
+  min-width: 80px;
+}
+
+.name {
+  color: #555;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.nutrition {
+  border: 2px solid #7a9b57;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition th,
+.nutrition td {
+  border: 1px solid #7a9b57;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.nutrition th {
+  background-color: transparent;
+  color: #7a9b57;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nutrition td {
+  font-weight: 600;
+  color: #333;
+}
+
+.visual-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 20px;
+}
+
+.visual-inner {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smoothie-img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
