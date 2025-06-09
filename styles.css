@@ -145,9 +145,8 @@ body {
 }
 
 .smoothie-img {
-  width: 100%;
-  height: auto;
-  max-height: 560px;
+  width: 550px;
+  height: 580px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
